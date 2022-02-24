@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/pomodoro.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box-circle">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle id="progressCircle" cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number-time" id="time">25:00</div>
+            </div>
+            <div class="input-time">
+                <i class="fa-solid fa-play fa-6x" id="btn"></i>
+            </div>
+        </div>
+    </body>
+    <script src="./js/timer.js"></script>
+</html>

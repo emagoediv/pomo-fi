@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    width: 100%;
+    height: 100%;
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(-45deg, #0d1049, rgb(143, 18, 143));
+    background-size: 300% 300%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-circle {
+    min-width: 12%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 14, 95);
+    border-radius: 30px;
+    margin-right: 1%;
+}
+
+.box-circle svg {
+    width: 170px;
+    height: 170px;
+    position: relative;
+}
+
+.box-circle svg circle {
+    fill: none;
+    stroke: #00089c;
+    stroke-width: 10;
+    transform: translate(15px, 15px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.box-circle svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke-dasharray: rgb(40, 40, 160);
+}
+.box-circle svg circle:nth-child(2) {
+    transition: stroke-dashoffset 4s;
+    stroke: #bbb8cf;
+}
+
+.input-time {
+    margin-left: 1%;
+}
+
+.input-time .fa-solid.fa-play.fa-6x {
+    transition: 0.6s;
+}
+.input-time .fa-solid.fa-play.fa-6x:hover {
+    color: #222;
+    cursor: pointer;
+}
+
+.number-time {
+    z-index: 1000;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+}
