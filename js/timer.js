@@ -11,6 +11,9 @@ pausar = false;
 BTN.addEventListener("click", () => {
     playPomodoroTimer();
 });
+BTN.addEventListener("click", () => {
+    playPomodoroTimer();
+});
 
 function playPomodoroTimer() {
     if (pausar == true) {
