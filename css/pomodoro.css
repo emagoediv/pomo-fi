@@ -97,3 +97,9 @@ body {
     margin-right: 0;
     color: antiquewhite;
 }
+
+@media (max-width: 600px) {
+    .input-time {
+        margin-left: 8%;
+    }
+}
