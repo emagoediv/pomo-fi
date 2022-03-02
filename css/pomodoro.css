@@ -38,13 +38,14 @@ body {
 
 .box-circle {
     min-width: 12%;
-    height: 20%;
+    min-height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(32, 14, 95);
     border-radius: 30px;
     margin-right: 1%;
+    box-shadow: -1px -1px 108px 46px rgba(0, 0, 0, 0.84);
 }
 
 .box-circle svg {
@@ -67,8 +68,13 @@ body {
     stroke-dasharray: rgb(40, 40, 160);
 }
 .box-circle svg circle:nth-child(2) {
-    transition: stroke-dashoffset 4s;
+    transition: stroke-dashoffset 0.75s;
     stroke: #bbb8cf;
+}
+
+.box-circle svg circle:nth-child(3) {
+    transition: stroke-dashoffset 3s;
+    stroke: #297909;
 }
 
 .input-time {
@@ -76,7 +82,7 @@ body {
 }
 
 .input-time .fa-solid.fa-play.fa-6x {
-    transition: 0.6s;
+    transition: 0.75s;
 }
 .input-time .fa-solid.fa-play.fa-6x:hover {
     color: #222;
@@ -89,4 +95,5 @@ body {
     align-items: center;
     text-align: center;
     margin-right: 0;
+    color: antiquewhite;
 }
