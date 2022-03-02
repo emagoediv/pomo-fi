@@ -11,7 +11,7 @@ pausar = false;
 BTN.addEventListener("click", () => {
     playPomodoroTimer();
 });
-BTN.addEventListener("click", () => {
+BTN.addEventListener("touchmove", () => {
     playPomodoroTimer();
 });
 
