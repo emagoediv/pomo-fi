@@ -73,7 +73,7 @@ function goTimer(pausado, timeS, stopTime = false) {
         }
 
         console.log(time);
-    }, 100);
+    }, 1000);
 }
 
 function stopTimer() {
