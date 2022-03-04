@@ -79,7 +79,7 @@ function goTimer(pausado, timeS, stopTime = false) {
         segundos = timeS;
 
         console.log(time);
-    }, 10);
+    }, 1000);
 }
 
 function stopTimer() {
