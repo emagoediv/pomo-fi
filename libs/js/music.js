@@ -1,23 +1,27 @@
 let musicas = [
     {
         titulo: "lofi 1",
-        src: "./musics/lofi1.mp3",
+        src: "./libs/musics/lofi1.mp3",
     },
     {
         titulo: "lofi 2",
-        src: "./musics/lofi2.mp3",
+        src: "./libs/musics/lofi2.mp3",
     },
     {
         titulo: "lofi 3",
-        src: "./musics/lofi3.mp3",
+        src: "./libs/musics/lofi3.mp3",
     },
     {
         titulo: "lofi 4",
-        src: "./musics/lofi4.mp3",
+        src: "./libs/musics/lofi4.mp3",
     },
     {
         titulo: "lofi 5",
-        src: "./musics/lofi5.mp3",
+        src: "./libs/musics/lofi5.mp3",
+    },
+    {
+        titulo: "lofi 6",
+        src: "./libs/musics/lofi6.mp3",
     },
 ];
 
