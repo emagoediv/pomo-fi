@@ -19,7 +19,7 @@ function playPomodoroTimer() {
     if (pausar == true) {
         window.clearInterval(timerCount);
     } else if (pausar == false) {
-        goTimer(pausar, 1500);
+        goTimer(pausar, segundos);
     }
     if (pausar == false) {
         pausar = true;
@@ -63,6 +63,7 @@ function goTimer(pausado, timeS, stopTime = false) {
                 } else {
                     window.clearInterval(timerCount);
                     pausar = false;
+                    segundos = 1500;
                     playPomodoroTimer();
                     CIRCLE.style.strokeDashoffset = 440;
                     CIRCLESTOP.style.strokeDashoffset = 440;
@@ -75,8 +76,10 @@ function goTimer(pausado, timeS, stopTime = false) {
             metadeVez = 0.5;
         }
 
+        segundos = timeS;
+
         console.log(time);
-    }, 1000);
+    }, 10);
 }
 
 function stopTimer() {
