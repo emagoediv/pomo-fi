@@ -34,6 +34,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(-89px 17px 8px #000);
 }
 
 .box-circle {
@@ -45,7 +47,7 @@ body {
     background-color: rgb(32, 14, 95);
     border-radius: 30px;
     margin-right: 1%;
-    box-shadow: -1px -1px 108px 46px rgba(0, 0, 0, 0.84);
+
 }
 
 .box-circle svg {
