@@ -27,10 +27,10 @@
     min-width: 50%;
     min-height: 8%;
     border-radius: 10px;
-    padding: 3px;
+    padding: 10px;
     border: none;
     transition: .5s;
-    margin: 2rem;
+    margin: 3rem;
     color: bisque;
 }
 .form-login > input:focus {
@@ -63,6 +63,7 @@
     text-decoration: none;
     color: rgb(146, 209, 209);
     margin-top: 2rem;
+    margin-bottom: .8rem;
     font-size: .8rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

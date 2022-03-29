@@ -10,6 +10,7 @@ metadeVez = 0.5;
 pausar = false;
 BTN.addEventListener("click", () => {
     playPomodoroTimer();
+    playMusic();
 });
 BTN.addEventListener("touchmove", () => {
     playPomodoroTimer();

@@ -1,10 +1,9 @@
-import { requisitar } from "./requireLogin.js"
 
-const WEBSERVER = 'http://localhost/loginPomo-fi'
+const WEBSERVER = "http://localhost/loginPomo-fi/"
 
 const FORM = document.getElementById('formLogin')
 
-console.log(FORM)
+const BTNEXIT = document.getElementById('btnExit')
 
 
 FORM.addEventListener('submit', (e) => {
@@ -17,5 +16,14 @@ FORM.addEventListener('submit', (e) => {
 
 
 function readResponse(valuesOfResponse) {
-    console.log(valuesOfResponse.login + " " + valuesOfResponse.pass)
+    if (valuesOfResponse.status == "logSuccess") {
+        localStorage.setItem("statusLog", "logged")
+        location.href = "index.html"  
+    }
 }
+
+
+BTNEXIT.addEventListener("click", () => {
+    localStorage.clear("statusLog")
+    window.location.href = "login.html"
+})

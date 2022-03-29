@@ -31,8 +31,8 @@ const PLAYERMUSIC = document.getElementById("playerMusic");
 
 function playMusic() {
     PLAYERMUSIC.addEventListener("loadeddata", () => {
-        PLAYERMUSIC.play();
         let tempoMusica = PLAYERMUSIC.duration;
+        PLAYERMUSIC.play();
         let timerMusic = setInterval(() => {
             tempoMusica--;
             console.log(tempoMusica);
@@ -53,4 +53,6 @@ function mudarMusica() {
     playMusic();
 }
 
-playMusic();
+BTN.addEventListener("click", () => {
+    PLAYERMUSIC.play();
+});
